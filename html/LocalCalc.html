@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Калькулятор</title>
+	<link rel="stylesheet" href="../css/localCalc.css">
+</head>
+
+<body class="page">
+	<!-- Шапка страницы -->
+	<header class="page__header"></header>
+	<!-- Основное содержимое страницы -->
+	<div class="page__content">
+		<!-- Навигация -->
+		<nav class="page__nav"></nav>
+		<!-- Основной контент: Калькулятор -->
+		<main class="calc">
+			<!-- Поля ввода -->
+			<div class="calc__inputs">
+				<input type="text" class="calc__input calc__input_type_task" placeholder="Введите задачу" autofocus>
+				<input type="text" class="calc__input calc__input_type_result" placeholder="Результат">
+				<!-- <input type="text" class="calc__input calc__input_type_memory" placeholder="Память"> -->
+			</div>
+			<!-- Кнопки ввода -->
+			<div class="calc__buttons">
+				<div class="calc__buttons-column calc__buttons-column_type_first">
+					<!-- <button class="calc__button calc__button_type_memory">MS</button> -->
+					<button class="calc__button calc__button_type_trig">sin</button>
+					<button class="calc__button calc__button_type_log" title='логарифм по основанию 2'>log2</button>
+					<button class="calc__button calc__button_type_operator calc__button_type_operator_power">x<sup>-1</sup></button>
+					<button class="calc__button calc__button_type_operator calc__button_type_operator_power">x<sup>y</sup></button>
+					<button class="calc__button calc__button_type_operator calc__button_type_operator_power"><sup>y</sup>√</button>
+					<button class="calc__button calc__button_type_operator calc__button_type_operator_power">x<sup>2</sup></button>
+					<button class="calc__button calc__button_type_operator calc__button_type_operator_power"><sup>2</sup>√</button>
+				</div>
+				<div class="calc__buttons-column calc__buttons-column_type_second">
+					<!-- <button class="calc__button calc__button_type_memory">MR</button> -->
+					<button class="calc__button calc__button_type_trig">cos</button>
+					<button class="calc__button calc__button_type_log" title='логарифм по основанию 10'>log10</button>
+					<button class="calc__button calc__button_type_bracket">(</button>
+					<button class="calc__button calc__button_type_number">7</button>
+					<button class="calc__button calc__button_type_number">4</button>
+					<button class="calc__button calc__button_type_number">1</button>
+					<button class="calc__button calc__button_type_number">0</button>
+				</div>
+				<div class="calc__buttons-column calc__buttons-column_type_third">
+					<!-- <button class="calc__button calc__button_type_memory">M+</button> -->
+					<button class="calc__button calc__button_type_trig">tg</button>
+					<button class="calc__button calc__button_type_log" title='Натуральный логарифм (по основанию 2.72)'>log</button>
+					<button class="calc__button calc__button_type_bracket">)</button>
+					<button class="calc__button calc__button_type_number">8</button>
+					<button class="calc__button calc__button_type_number">5</button>
+					<button class="calc__button calc__button_type_number">2</button>
+					<button class="calc__button calc__button_type_number">.</button>
+				</div>
+				<div class="calc__buttons-column calc__buttons-column_type_fourth">
+					<!-- <button class="calc__button calc__button_type_memory">M-</button> -->
+					<button class="calc__button calc__button_type_special">Backspace</button>
+					<button class="calc__button calc__button_type_constant">3.14</button>
+					<button class="calc__button calc__button_type_bracket"></button>
+					<button class="calc__button calc__button_type_number">9</button>
+					<button class="calc__button calc__button_type_number">6</button>
+					<button class="calc__button calc__button_type_number">3</button>
+					<button class="calc__button calc__button_type_operator">=</button>
+				</div>
+				<div class="calc__buttons-column calc__buttons-column_type_fifth">
+					<!-- <button class="calc__button calc__button_type_memory">MC</button> -->
+					<button class="calc__button calc__button_type_special">Clear All</button>
+					<button class="calc__button calc__button_type_constant">2.72</button>
+					<button class="calc__button calc__button_type_operator calc__button_type_operator_factorial">!</button>
+					<button class="calc__button calc__button_type_operator">/</button>
+					<button class="calc__button calc__button_type_operator">*</button>
+					<button class="calc__button calc__button_type_operator">-</button>
+					<button class="calc__button calc__button_type_operator">+</button>
+				</div>
+			</div>
+		</main>
+		<!-- Дополнительная навигация или контент -->
+		<nav class="page__nav"></nav>
+	</div>
+	<!-- Подвал страницы -->
+	<footer class="page__footer"></footer>
+	<!-- Скрипты -->
+	<script src="../js/localCalc.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="../js/functionLibrary.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+
+</html>
